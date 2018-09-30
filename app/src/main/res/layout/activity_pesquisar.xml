@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ebebeb"
+    android:orientation="vertical"
+    tools:context=".PesquisarActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Contatos"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/design_default_color_primary_dark"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:text="Nome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="34dp"
+                android:id="@+id/lbNome" />
+
+            <TextView
+                android:text="Endereco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/lbNome"
+                android:layout_toRightOf="@+id/lbNome"
+                android:layout_toEndOf="@+id/lbNome"
+                android:layout_marginLeft="18dp"
+                android:layout_marginStart="18dp"
+                android:id="@+id/lbEndereco" />
+
+            <TextView
+                android:text="Cidade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/lbEndereco"
+                android:layout_toRightOf="@+id/lbEndereco"
+                android:layout_toEndOf="@+id/lbEndereco"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:id="@+id/lbCidade" />
+
+            <TextView
+                android:text="Telefone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lbTelefone"
+                android:layout_alignBaseline="@+id/lbCidade"
+                android:layout_alignBottom="@+id/lbCidade"
+                android:layout_toRightOf="@+id/lbCidade"
+                android:layout_toEndOf="@+id/lbCidade"
+                android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp" />
+
+            <TextView
+                android:id="@+id/lbEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/lbTelefone"
+                android:layout_alignBottom="@+id/lbTelefone"
+                android:layout_marginStart="7dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginBottom="-35dp"
+                android:layout_toEndOf="@+id/lbTelefone"
+                android:layout_toRightOf="@+id/lbTelefone"
+                android:text="E-mail" />
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/list_contatos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>

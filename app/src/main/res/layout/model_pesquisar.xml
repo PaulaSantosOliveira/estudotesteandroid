@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="34dp"
+        android:id="@+id/txtNome" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtNome"
+        android:layout_toRightOf="@+id/txtNome"
+        android:layout_toEndOf="@+id/txtNome"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:id="@+id/txtEndereco" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtEndereco"
+        android:layout_toRightOf="@+id/txtEndereco"
+        android:layout_toEndOf="@+id/txtEndereco"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:id="@+id/txtCidade" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTelefone"
+        android:layout_alignBaseline="@+id/txtCidade"
+        android:layout_alignBottom="@+id/txtCidade"
+        android:layout_toRightOf="@+id/txtCidade"
+        android:layout_toEndOf="@+id/txtCidade"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp" />
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtTelefone"
+        android:layout_alignBottom="@+id/txtTelefone"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginBottom="-35dp"
+        android:layout_toEndOf="@+id/txtTelefone"
+        android:layout_toRightOf="@+id/txtTelefone"
+        android:text="TextView" />
+
+</RelativeLayout>
